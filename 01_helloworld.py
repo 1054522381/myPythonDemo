@@ -17,3 +17,5 @@ print('salary: %.2f' % salary)
 a = 'aa'
 b = "aa"
 print(a == b)
+# 内存地址
+print(id(a) == id(b))
