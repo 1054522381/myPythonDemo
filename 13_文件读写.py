@@ -10,7 +10,7 @@ linux：\n
 文件本质上都是以二进制的方式存储在磁盘上的。
 """
 
-# write写文件
+# write写文件，默认是从当前目录找指定名字的文件，如果找不到会报错。
 f = open('a.txt', 'w')
 my_content = "hello world\n"
 f.write(my_content)
