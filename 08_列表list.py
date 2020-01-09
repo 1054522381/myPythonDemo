@@ -19,6 +19,11 @@ for o in my_list:
             print(num, end=' ')
 print()
 
+# enumerate() 函数遍历列表元素的索引位置和对应值
+print('-----enumerate() 函数遍历列表元素-------')
+for index, value in enumerate(my_list):
+    print(index, value)
+
 # 指定位置插入元素
 my_list.insert(0, 'first')
 print('指定位置添加元素：', my_list)
@@ -37,6 +42,12 @@ my_list.pop()
 print('pop默认删除末尾元素：', my_list)
 my_list.remove('aaa')
 print('删除第一个出现的aaa值：', my_list)
+
+# 用zip()同时遍历两个或更多的序列
+questions = ['name', 'age', 'favorite color']
+answers = ['zhangsan', 30, 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
 
 # 清空列表
 my_list.clear()

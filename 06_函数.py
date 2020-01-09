@@ -40,7 +40,7 @@ add(5, b=5)
 add(None)
 
 
-# 不定长参数
+# 不定长参数，参数加了星号 * ，会以元组(tuple)的形式导入，存放所有未命名的变量参数。
 def printinfo(arg1, *vartuple):
     """打印任何传入的参数"""
     print("printinfo输出: ")
@@ -52,3 +52,22 @@ def printinfo(arg1, *vartuple):
 printinfo(70, 60, 50)
 
 
+# 不定长参数，加了两个星号 ** 的参数会以字典的形式导入。
+def printinfo2(arg1, **vardict):
+    """打印任何传入的参数"""
+    print("printinfo2输出: ")
+    print(arg1)
+    print(vardict)
+
+
+# 调用printinfo2 函数
+printinfo2(1, a=2, b=3)
+
+# 用lambda创建匿名函数，语法： lambda [arg1 [,arg2,.....argn]]:expression
+func = lambda arg1, arg2: arg1 + arg2
+
+# 调用func函数
+print("func调用后的值为 : ", func(10, 20))
+
+# 每个模块都有一个__name__属性，当其值是'__main__'时，表明该模块自身在运行，否则是被引入。
+print('__name__属性：', __name__)
