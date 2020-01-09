@@ -38,3 +38,17 @@ add(b=1, a=4)
 add(5, b=5)
 
 add(None)
+
+
+# 不定长参数
+def printinfo(arg1, *vartuple):
+    """打印任何传入的参数"""
+    print("printinfo输出: ")
+    print(arg1)
+    print(vartuple)
+
+
+# 调用printinfo 函数
+printinfo(70, 60, 50)
+
+
