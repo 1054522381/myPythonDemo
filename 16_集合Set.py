@@ -42,6 +42,15 @@ print('随机剔除一个元素：', element, '\n集合：', empty_set)
 # 判断元素是否在集合中存在
 print('ttt是否为集合元素：', 'ttt' in empty_set)
 
+a = {1, 3, 5, 7}
+b = {1, 2, 3, 4, 5}
+
+# a 和 b 的差集
+print(f'差集：{b - a}')
+print(f'并集：{a | b}')
+print(f'交集：{a & b}')
+print(f'a 和 b 中不同时存在的元素：{a ^ b}')
+
 # 清空集合
 empty_set.clear()
 print('集合已清空：', empty_set)
