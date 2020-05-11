@@ -48,3 +48,12 @@ print('是否全字母：', 'hello'.isalpha())
 # 判断全数字
 print('是否全数字', '3534587'.isdigit())
 
+# 格式化
+print('Hello, {}'.format('world'))
+print('Hello, {0} {1}'.format('aaa', 'bbb'))
+print('Hello, {x} {y}'.format(x=123, y='bbb'))
+
+# 0.21%
+print('%.2f%%' % (float(10575 / 5074480) * 100))
+# round(x [,n])，浮点数x四舍五入，舍入到小数点后的n位数。
+print(f'{round(float(10575 / 5074480) * 100, 2)}%')
