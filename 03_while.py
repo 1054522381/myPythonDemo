@@ -33,3 +33,10 @@ while i <= 5:
         j += 1
     i += 1
     print()
+
+# range()函数生成数列
+print(f'type rang(5) => {type(range(5))}')
+print(f'rang(5) => {list(range(5))}')
+print(f'rang(5, 9) => {list(range(5, 9))}')
+print(f'range(0, 10, 3) => {list(range(0, 10, 3))}')
+
