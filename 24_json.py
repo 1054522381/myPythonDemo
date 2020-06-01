@@ -10,14 +10,16 @@ data = {
 }
 
 json_str = json.dumps(data)
-print("Python 原始数据：", repr(data))
-print("JSON 对象：", json_str)
+print(f"Python 数据：{data}")
+print(f"JSON 串：{json_str}")
 
+json_str = json.dumps(data, indent=2, sort_keys=True)
+print(f"key排序后的JSON pretty串：{json_str}")
 
 # 将 JSON 对象转换为 Python 字典
-data2 = json.loads(json_str)
-print ("data2['name']: ", data2['name'])
-print ("data2['url']: ", data2['url'])
+json_obj = json.loads(json_str)
+print(f"json_obj['name']: {json_obj['name']}")
+print(f"json_obj['url']: {json_obj['url']}")
 
 # 写入 JSON 数据
 with open('data.json', 'w') as f:
@@ -27,4 +29,4 @@ with open('data.json', 'w') as f:
 # 读取数据
 with open('data.json', 'r') as f:
     data = json.load(f)
-    print('json文件内容：', data)
+    print(f'json文件内容：{data}')
