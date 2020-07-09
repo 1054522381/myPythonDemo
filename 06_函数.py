@@ -45,7 +45,7 @@ def printinfo(arg1, *vartuple):
     """打印任何传入的参数"""
     print("printinfo输出: ")
     print(arg1)
-    print(vartuple)
+    print(f"带一个*的不定长参数vartuple=>{vartuple}")
 
 
 # 调用printinfo 函数
@@ -57,7 +57,7 @@ def printinfo2(arg1, **vardict):
     """打印任何传入的参数"""
     print("printinfo2输出: ")
     print(arg1)
-    print(vardict)
+    print(f"带两个*的不定长参数vardict=>{vardict}")
 
 
 # 调用printinfo2 函数
