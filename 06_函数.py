@@ -41,6 +41,17 @@ def printinfo2(arg1, **vardict):
 # 用lambda创建匿名函数，语法： lambda [arg1 [,arg2,.....argn]]:expression
 fun = lambda arg1, arg2: arg1 + arg2
 
+# 全局变量
+scope = 'outter'
+
+
+def test_scope():
+    # 如果访问全局变量，要用global
+    # global scope
+    # print(f'scope=>{scope}')
+    scope = 'inner'
+    print(f'scope=>{scope}')  # inner
+
 
 # 每个模块都有一个__name__属性，当其值是'__main__'时，表明该模块自身在运行，否则是被引入。
 if __name__ == '__main__':
@@ -70,3 +81,6 @@ if __name__ == '__main__':
 
     # 调用lambda匿名函数fun
     print("fun调用后的值为 : ", fun(10, 20))
+
+    test_scope()
+    print(f'scope=>{scope}')  # outter
