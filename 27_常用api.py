@@ -16,6 +16,11 @@ def test_time():
     yesterday = datetime.date.today() + datetime.timedelta(days=-1)
     yesterday_str = str(yesterday)
 
+    # 指定日期加一天
+    first_day = datetime.date(2019, 12, 24)
+    first_day = first_day + datetime.timedelta(days=1)
+    print(f"day=>{first_day}")
+
 
 if __name__ == '__main__':
     test_time()
