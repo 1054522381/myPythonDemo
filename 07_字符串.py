@@ -65,3 +65,7 @@ print(t)
 # 整数格式化，如果变量长度不到6位则左边补0，长度大于等于6位则返回变量本身
 t = '我的学号是：%06d' % 103
 print(t)
+
+# True=1 False=0 可以和数字运算
+print('True + 12 =', True + 12)
+print('False + 21 =', False + 21)
