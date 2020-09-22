@@ -13,6 +13,7 @@ print(my_str[-1])
 
 # 访问子字符串 [start, end)
 print(my_str[1:5])
+print(f"my_str[1:-1]={my_str[1:-1]}")
 # 步长
 print('根据步长取子串：', my_str[1:5:2])
 # 字符串逆序
@@ -69,3 +70,7 @@ print(t)
 # True=1 False=0 可以和数字运算
 print('True + 12 =', True + 12)
 print('False + 21 =', False + 21)
+
+# join
+print(','.join(['a', 'b', 'c']))
+
